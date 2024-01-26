@@ -42,11 +42,3 @@ searchBtn.addEventListener("click", function () {
 });
 
 checkWeather("rasht");
-
-let ws = new WebSocket("wss://stream.binance.com:9443/ws/etheur@trade");
-let stockPrice = document.getElementById("p1");
-ws.onmessage = function (evt) {
-  let stockObject = JSON.parse(evt.data);
-  stockPrice.innerHTML = parseFloat(stockObject.p).toFixed(2);
-  console.log(stockObject.p);
-};
