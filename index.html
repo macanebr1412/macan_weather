@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- link Dm sans to set font family -->
+    <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+        <button><i class="fa fa-2x fa-search"></i></button>
+      </div>
+      <p class="error-message">ooooops! location not found</p>
+
+      <div class="weather">
+        <img
+          src="assets/image/snow.png"
+          alt="rain  icon"
+          class="weather-icon"
+          width="170"
+          height="170"
+        />
+        <h1 class="temp">22°c</h1>
+        <h2 class="city">Rasht</h2>
+        <div class="details">
+          <div class="col">
+            <img
+              src="assets/image/humidity.png"
+              alt="humidity icon"
+              width="40"
+              height="40"
+            />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img
+              src="assets/image/wind.png"
+              alt="humidity icon"
+              width="40"
+              height="40"
+            />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="p1" style="color: white"></p>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
